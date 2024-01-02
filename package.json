@@ -1,0 +1,43 @@
+{
+  "name": "app-skeleton",
+  "version": "1.0.0",
+  "main": "dist/server/index.js",
+  "scripts": {
+    "dev": "concurrently -n client,server,opener --hide opener --handle-input --default-input-target server 'webpack --mode=development -w' 'nodemon' 'opener http://localhost:8080'",
+    "build": "webpack --mode=production",
+    "start": "node dist/server/index.js"
+  },
+  "devDependencies": {
+    "@types/express": "*",
+    "@types/react": "*",
+    "@types/react-dom": "*",
+    "@typescript-eslint/eslint-plugin": "*",
+    "@typescript-eslint/parser": "*",
+    "clean-webpack-plugin": "*",
+    "concurrently": "*",
+    "copy-webpack-plugin": "*",
+    "css-loader": "*",
+    "eslint": "*",
+    "eslint-plugin-import": "*",
+    "eslint-plugin-react": "*",
+    "eslint-plugin-react-functional-set-state": "*",
+    "eslint-plugin-react-hooks": "*",
+    "html-webpack-plugin": "*",
+    "nodemon": "*",
+    "opener": "^1.5.2",
+    "sass": "*",
+    "sass-loader": "*",
+    "style-loader": "*",
+    "terser-webpack-plugin": "*",
+    "ts-loader": "*",
+    "typescript": "*",
+    "webpack": "*",
+    "webpack-cli": "*",
+    "webpack-node-externals": "*"
+  },
+  "dependencies": {
+    "express": "*",
+    "react": "*",
+    "react-dom": "*"
+  }
+}
