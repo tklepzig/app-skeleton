@@ -24,7 +24,7 @@
     "eslint-plugin-react-hooks": "*",
     "html-webpack-plugin": "*",
     "nodemon": "*",
-    "opener": "^1.5.2",
+    "opener": "*",
     "sass": "*",
     "sass-loader": "*",
     "style-loader": "*",
