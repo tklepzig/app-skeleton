@@ -26,14 +26,17 @@
         "@typescript-eslint",
         "react-hooks",
         "react-functional-set-state",
-        "import"
+        "import",
+        "eslint-plugin-tailwindcss"
       ],
       "extends": [
         "eslint:recommended",
         "plugin:@typescript-eslint/eslint-recommended",
         "plugin:@typescript-eslint/recommended",
-        "plugin:react/recommended"
+        "plugin:react/recommended",
+        "plugin:tailwindcss/recommended"
       ],
+      "settings": { "tailwindcss": { "callees": ["cx", "cva"] } },
       "rules": {
         "react/self-closing-comp": "error",
         "react-hooks/rules-of-hooks": "error",
