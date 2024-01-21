@@ -72,6 +72,6 @@ module.exports = (_, { mode }) => {
     optimization: {
       minimizer: [new TerserPlugin()],
     },
-    plugins: [new CleanWebpackPlugin()],
+    plugins: [...config.plugins, new CleanWebpackPlugin()],
   };
 };
