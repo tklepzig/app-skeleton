@@ -5,6 +5,7 @@
     "strictNullChecks": true,
     "baseUrl": ".",
     "experimentalDecorators": true,
-    "paths": { "shared": ["shared"] }
+    "paths": { "shared": ["shared"] },
+    "types": ["vitest/globals"]
   }
 }
