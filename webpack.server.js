@@ -15,6 +15,10 @@ const config = {
 
   resolve: {
     extensions: [".ts", ".js"],
+    alias: {
+      "@server": path.resolve(__dirname, "src/server"),
+      "@shared": path.resolve(__dirname, "src/shared"),
+    },
   },
 
   target: "node",

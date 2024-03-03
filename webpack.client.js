@@ -13,6 +13,10 @@ const config = {
 
   resolve: {
     extensions: [".ts", ".tsx", ".js", ".json"],
+    alias: {
+      "@public": path.resolve(__dirname, "src/public"),
+      "@shared": path.resolve(__dirname, "src/shared"),
+    },
   },
 
   module: {

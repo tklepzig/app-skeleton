@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "dist/server/index.js",
   "scripts": {
-    "dev": "concurrently -c cyan,green -n client,server,opener --hide opener --handle-input --default-input-target server 'webpack --mode=development -w' 'nodemon' 'opener http://localhost:8080'",
+    "dev": "concurrently -c cyan,green -n webpack,nodemon,opener --hide opener --handle-input --default-input-target server 'webpack --mode=development -w' 'nodemon' 'opener http://localhost:8080'",
     "build": "webpack --mode=production",
     "start": "node dist/server/index.js"
   },
@@ -29,7 +29,7 @@
     "terser-webpack-plugin": "*",
     "ts-loader": "*",
     "typescript": "*",
-    "typescript-plugin-css-modules": "^5.1.0",
+    "typescript-plugin-css-modules": "*",
     "vite-tsconfig-paths": "*",
     "vitest": "*",
     "webpack": "*",

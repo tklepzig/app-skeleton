@@ -1,5 +1,5 @@
 import { PropsWithChildren } from "react";
-import { cls } from "../../cls";
+import { cls } from "@public/cls";
 import css from "./Headline.module.css";
 
 export const Headline = ({ children }: PropsWithChildren) => (
