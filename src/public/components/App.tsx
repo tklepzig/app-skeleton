@@ -1,1 +1,3 @@
-export const App = () => <h1 className="m-3">WIP</h1>;
+import { Headline } from "./Headline";
+
+export const App = () => <Headline>WIP</Headline>;
