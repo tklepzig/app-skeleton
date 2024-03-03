@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "main": "dist/server/index.js",
   "scripts": {
-    "dev": "concurrently -n client,server,tailwind,opener --hide opener --handle-input --default-input-target server 'webpack --mode=development -w' 'nodemon' 'tailwindcss -i ./src/public/input.css -o ./src/public/output.css --watch'  'opener http://localhost:8080'",
-    "build": "tailwindcss -i ./src/public/input.css -o ./src/public/output.css && webpack --mode=production",
+    "dev": "concurrently -n client,server,opener --hide opener --handle-input --default-input-target server 'webpack --mode=development -w' 'nodemon' 'opener http://localhost:8080'",
+    "build": "webpack --mode=production",
     "start": "node dist/server/index.js"
   },
   "devDependencies": {
@@ -22,12 +22,10 @@
     "eslint-plugin-react": "*",
     "eslint-plugin-react-functional-set-state": "*",
     "eslint-plugin-react-hooks": "*",
-    "eslint-plugin-tailwindcss": "*",
     "html-webpack-plugin": "*",
     "nodemon": "*",
     "opener": "*",
     "style-loader": "*",
-    "tailwindcss": "*",
     "terser-webpack-plugin": "*",
     "ts-loader": "*",
     "typescript": "*",
