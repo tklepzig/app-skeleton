@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "dist/server/index.js",
   "scripts": {
-    "dev": "concurrently -c cyan,green -n webpack,nodemon,opener --hide opener --handle-input --default-input-target server 'webpack --mode=development -w' 'nodemon' 'opener http://localhost:8080'",
+    "dev": "concurrently -c cyan,green -n webpack,nodemon,opener --hide opener --handle-input --default-input-target nodemon 'webpack --mode=development -w' 'nodemon' 'opener http://localhost:8080'",
     "build": "webpack --mode=production",
     "start": "node dist/server/index.js"
   },
